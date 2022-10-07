@@ -1,33 +1,31 @@
-# Cervical Cancer Risk
+# IMDB analysis
 
 By **Paula Pipkin** 
 
-### Evaluating Cervical Cancer Risk :
+### Evaluating factors that are relevant for the revenue of a movie :
 
-This dataset focuses on the prediction of indicators/diagnosis of cervical cancer. 
-The features cover demographic information, habits, and historic medical records.
+This dataset collects most relevant information for movies released between 2012 and 2021. 
+The features cover information like budget, revenue, ratings, certification and so on.
 
 
 ### Data:
 
-The data set source is the website UCI Machine Learning Repository and here is a link to the original data:
-[https://datahack.analyticsvidhya.com/contest/practice-problem-big-mart-sales-iii/](https://archive.ics.uci.edu/ml/datasets/Cervical+cancer+%28Risk+Factors%29#)
+The inicial data was downloaded from https://datasets.imdbws.com/ and aditional information was gathered using API calls from IMDB.
 
 ## Methods
 
-- After some pre cleaning, two copies of the data were made so EDA could be done without risking leakage.  
-- EDA was used to show correlations between some relevant features
-- 3 models were applied, Random Forrest, KNN and Lgbm
+- SQL files were created using the ETL method.  
+- Queries were made to extract the necessary data to respond to the stakeholders questions.
+- Hypothesis test and vizualizations were done to better answer those question
 
 
 ## Results
 
-LGBM had the best results and it was the model chosen to be used.
 
 ### EDA
 
-#### Patients with HPV
-![sample image](plot1.png)
+#### Revenue by certification rating: Does the MPAA rating of a movie (G/PG/PG-13/R) affect how much revenue the movie generates?
+![sample image](graph_certification.png)
 
 > Out of 835 patients, 1/3 or 33% of those patients diagnosed with HPV were also diagnosed with cervical cancer, only 5% of those without HPV were diagnosed with Cervical Cancer.
 
