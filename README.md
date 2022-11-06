@@ -49,7 +49,7 @@ This data has more de 35000 rows total.
 
 ## Recommendations, Limitations & Next Steps:
 
-- To come
+- A model will be applied to predict if a movie will be successful in generating revenue.
 - To come
 
 ### For further information
